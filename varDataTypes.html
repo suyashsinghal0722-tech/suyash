@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //js data value types
+        //primitive - immutable single value data type in js
+        // string, Number, Boolean, undefined, Null, BgInt and Symbol
+
+        //string
+        var myName= "Suyash Singhal"
+        console.log(myName);
+        // number
+
+        var myMob= 922092409;
+        console.log(myName + " mobile number is " + myMob);
+
+    //boolean 
+    var isMarried = false;
+    console.log(myName + " is married ? " + isMarried);
+
+    //undefined
+    var myEmail;
+    console.log(myEmail);
+    console.log(typeof(myEmail));
+
+    //null 
+    var mayAddress= null;
+    console.log(mayAddress);
+    console.log(typeof(mayAddress));
+
+    //big int
+    var myNum= BigInt(850958350983098350980980398);
+    console.log(myNum);
+    console.log(typeof(myNum));
+
+    //symbol
+    var var1 = Symbol("vikas");
+    var var2 = Symbol("vikas");
+    console.log(var1==var2);
+
+
+    // Refrence Type(object)-- mutable in memory and keep the data in key value pair
+    //object {}, funtion (), array[]
+
+    let myInfo= {
+        name : "suyash",
+        age: 18,
+        isMarried: false,
+        address: "Ghaziabad",
+        branch: "CSE",
+        section: 23
+    };
+    console.log(myInfo);
+    console.log(myInfo.name);
+
+    //object length
+    var keys= Object.keys(myInfo);
+    console.log(keys.length);
+
+
+    // function - block of code to perform particular task 
+
+    function cal(){
+        var num1= 143;
+        var num2= 40;
+        var add= num1 + num2;
+        console.log("Addition of two number is " + add);
+    }
+    cal();
+
+    // array - collection of any data type 
+
+    let studentlist = ["stu1", "suryansh", "tanish", "sumit", "aditya"];
+    console.log(studentlist[0]);
+
+    //for different data types
+    let stu1= ["soyanshu", 19, false, "GZB", "CSE", null, 18];
+    console.log(stu1);
+    console.log(stu1.length);
+
+    // to iterate array member
+    for(let i=0; i<stu1.length; i++){
+        console.log(stu1[i]);
+    }
+
+    
+    
+
+
+    </script>
+</body>
+</html>
